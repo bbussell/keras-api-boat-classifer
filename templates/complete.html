@@ -1,0 +1,15 @@
+<html>
+<head>
+	<title>Files Uploaded</title>
+</head>
+<body>
+
+	{% for result in results %}
+	<h1>File Uploaded:</h1>
+	<img style="max-width:300px" src="{{ url_for('static', filename='images/' + result['filename']) }}" alt="{{ result['filename'] }}">
+	<h2>{% if result['success'] %}Success!{% else %}Failure{% endif %}</h2>
+	<h3>The classifier thinks this is a {{ result['predictions'][0]['label'] }}!</h3>
+	{% endfor %}
+
+</body>
+</html>

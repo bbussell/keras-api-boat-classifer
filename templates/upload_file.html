@@ -1,0 +1,12 @@
+
+<html>
+   <body>
+   <title>Boat Image Classifer</title>
+   <h1>A prototype API for classifying images of different types of boat</h1>
+   <p>Upload new File</p>
+      <form id="upload-form" action = "{{ url_for('upload') }}" method = "POST" enctype = "multipart/form-data">
+         <input type = "file" name = "file" accept="image/*" multiple >
+         <input type = "submit" value="Upload" />
+      </form>
+   </body>
+</html>
