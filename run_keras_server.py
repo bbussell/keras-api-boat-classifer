@@ -131,9 +131,8 @@ def upload():
 
         # results = imagenet_utils.decode_predictions(preds)
         data["predictions"] = []
-        #labels = {"cruise": 1, "ferry": 2, "freight": 3, "gondola": 4, "kayak": 6, "sail": 8}
-        labels = {"buoy": 0, "cruise": 1, "ferry": 2, "freight": 3, "gondola": 4, "inflatable": 5, "kayak": 6,
-                 "paper": 7, "sail": 8}
+        labels = {"cruise ship": 0, "ferry": 1, "freight ship": 2, "gondola": 3, "inflatable boat": 4, "kayak": 5,
+                  "paper boat": 6, "sailing yacht": 7}
         labels_list = list(labels)
         # loop over the results and add them to the list of returned predictions
 
@@ -180,9 +179,8 @@ def predict():
         pred_digits = np.argmax(preds, axis=1)
         # s = imagenet_utils.decode_predictions(preds)
         data["predictions"] = []
-        #labels = {"cruise": 1, "ferry": 2, "freight": 3, "gondola": 4, "kayak": 6, "sail": 8}
-        labels = {"buoy": 0, "cruise": 1, "ferry": 2, "freight": 3, "gondola": 4, "inflatable": 5, "kayak": 6,
-                 "paper": 7, "sail": 8}
+        labels = {"cruise ship": 0, "ferry": 1, "freight ship": 2, "gondola": 3, "inflatable boat": 4, "kayak": 5,
+                 "paper boat": 6, "sailing yacht": 7}
         labels_list = list(labels)
         # loop over the results and add them to the list of
         # returned predictions
