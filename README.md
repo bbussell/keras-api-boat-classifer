@@ -14,7 +14,7 @@ $ pip install -r requirements.txt
 
 Before starting the Keras server, the pre-trained boat classifer model will need to be downloaded from the following link and placed in your repository directory:
 
-https://drive.google.com/file/d/1pd6iGFtPLW_jeOS-Y3r0jkqr23yFmtXM/view?usp=sharing
+https://drive.google.com/file/d/1k1BO7k5qm3LrFXlClpTnS90lIXkogmXd/view?usp=sharing
 
 
 ## Starting the Keras server
